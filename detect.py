@@ -12,7 +12,7 @@ if __name__ == '__main__':
     model = YOLO(args.model)
 
     # Detect objects in the input image
-    results = model(args.image, save=True, show=True, show_boxes=True)
+    results = model(args.image, imgsz=416, save=True, show=True, show_boxes=True)
 
     # Print the detected objects
     print(results)

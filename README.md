@@ -40,13 +40,17 @@ set utf8 format for python if you are getting strange error with latin1 encoding
 export PYTHONUTF8=1 
 ```
 ### Run models
-1. Running pt models
+1. Detecting from local images
+    ```
+    python detect.py --model=./models/best.onnx --image=./test/<filename.jpg>
+    ```
+2. Running pt models
     ```
     python main.py --debug
     python main.py --print_fps
     ```
-2. Running exported models
+3. Running exported models
     ```
-    python main.py --mode=./models/best.onnx  -debug
+    python main.py --model=./models/best.onnx  -debug
     python main.py --model=./models/best_saved_model/best_integer_quant.tflite --debug
     ```
