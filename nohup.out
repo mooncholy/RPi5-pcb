@@ -1,0 +1,13 @@
+[2:14:50.269264431] [5298] [1;31mERROR [1;37mIPAModule [1;34mipa_module.cpp:172 [0mSymbol ipaModuleInfo not found
+[2:14:50.269327301] [5298] [1;31mERROR [1;37mIPAModule [1;34mipa_module.cpp:292 [0;32mv4l2-compat.so: [0mIPA module has no valid info
+[2:14:50.269360690] [5298] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:284 [0mlibcamera v0.1.0+246-9fb4698e-dirty (2024-02-27T06:28:07+00:00)
+[2:14:50.278252840] [5306] [1;32m INFO [1;37mRPI [1;34mpisp.cpp:662 [0mlibpisp version v1.0.4 6e3a53d137f4 14-02-2024 (14:00:12)
+[2:14:50.299633258] [5306] [1;32m INFO [1;37mRPI [1;34mpisp.cpp:1122 [0mRegistered camera /base/axi/pcie@120000/rp1/i2c@80000/imx708@1a to CFE device /dev/media0 and ISP device /dev/media1 using PiSP variant BCM2712_C0
+Mode selection for 640:640:12:P(25)
+    SRGGB10_CSI2P,1536x864/120.135 - Score: 1571.67
+    SRGGB10_CSI2P,2304x1296/56.0255 - Score: 1871.67
+    SRGGB10_CSI2P,4608x2592/14.3536 - Score: 24064.5
+Stream configuration adjusted
+[2:14:54.467420826] [5298] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1183 [0mconfiguring streams: (0) 640x640-YUV420 (1) 1536x864-BGGR16_PISP_COMP1
+[2:14:54.467472567] [5306] [1;32m INFO [1;37mRPI [1;34mpisp.cpp:1406 [0mSensor: /base/axi/pcie@120000/rp1/i2c@80000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+Received signal 2
