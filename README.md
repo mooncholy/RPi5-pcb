@@ -16,7 +16,12 @@
     //optional clean up
     rm -rf ~/miniconda3/miniconda.sh
     ```
-3. Installing CMake in raspberrypi is needed for tflite format
+3. Installing GStreamer to enable streaming the video in real time
+    ```
+    sudo apt-get install gstreamer1.0-tools     // Gstreamer for RTSP stream from camera
+    sudo apt-get install gstreamer1.0-plugins-ugly	//for enabling x264 encoding for mp4 videos
+    ```
+4. Installing CMake in raspberrypi is needed for tflite format
     `sudo apt-get install cmake`  
 ## Create envirnoment
 ```
