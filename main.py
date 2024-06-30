@@ -12,14 +12,14 @@ if __name__ == '__main__':
     ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
     ser.reset_input_buffer()
     model = YOLO(args.model)
-    results = model.predict('tcp://192.168.137.36:8080', stream=True, imgsz=416)
+    results = model.predict('tcp://localhost:8080', stream=True, imgsz=416)
     while True:
         for result in results:
             boxes = result.boxes
             # probs = result.probs
             for box in boxes:
                 probs = math.ceil((box.conf[0]*100))/100
-                print(f"Confidence = {probs}")
+                print(f"Class = {int(box.cls[0])}, Confidence = {probs}")
                 # class name
                 cls = int(box.cls[0])
                 cls = str(cls) + "\n"
